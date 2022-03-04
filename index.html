@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistemas de ahorros</title>
+</head>
+<body>
+    <div class="container" id="caja">
+        <div class="container ">
+            <h1 class=" mt-5" data-shadow="Sistema de ahorros">Sistema de ahorros</h1>
+            <div class="row" id="antes">
+                <div class="col-md-6">
+    
+                    <form id="form-resolve">
+                       
+                        <div class="form-group offset-2">
+                            <label class="col-form-label" for="inputDefault">Monto 1</label>
+                            <input class="form-control" type="number" id="numero1">
+                        </div>
+                        
+                        <div class="form-group offset-2">
+                            <label class="col-form-label" for="inputDefault">Monto 2</label>
+                            <input class="form-control" type="number" id="numero2">
+                        </div>
+    
+                        <div class="form-group offset-2">
+                            <label class="col-form-label">Monto Total</label>
+                            <input class="form-control" type="number" disabled id="Sum">
+                        </div>
+    
+                        <div class="row mt-4  offset-2">
+    
+                            <div class="col-md-6">
+                                <input class="form-control btn btn-outline-success" type="submit" value="Sumar montos">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control btn btn-outline-danger" type="reset" value="Resetear" onclick="location.reload()">
+                            </div>
+    
+                        </div>
+    
+                    </form>
+                </div>
+                <div class="col-md-6 " id="resultados">
+    
+                    <div class="row mt-3 ">
+                        <div class="col-md-5 offset-3">
+                            <input type="checkbox" id="checkS">
+                            <label>Cuenta Necesidades</label>
+                            <input class="form-control" type="number" disabled id="Cuenta1">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-3">
+                        <div class="col-md-5 offset-3">
+                            <input type="checkbox" id="checkS">
+                            <label>Cuenta Educación</label>
+                            <input class="form-control" type="number" disabled id="Cuenta2">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-3">
+                        <div class="col-md-5 offset-3">
+                            <input type="checkbox" id="checkS">
+                            <label>Cuenta Libertad</label>
+                            <input class="form-control" type="number" disabled id="Cuenta3">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-3">
+                        <div class="col-md-5 offset-3">
+                            <input type="checkbox" id="checkS">
+                            <label>Cuenta Ahorros</label>
+                            <input class="form-control" type="number" disabled id="Cuenta4">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-5 offset-3">
+                            <input type="checkbox" id="checkS">
+                            <label>Cuenta Juego</label>
+                            <input class="form-control" type="number" disabled id="Cuenta5">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-5 offset-3">
+                            <input type="checkbox" id="checkS">
+                            <label>Cuenta Otros</label>
+                            <input class="form-control" type="number" disabled id="Cuenta6">
+                        </div>
+                    </div>
+    
+                    
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
